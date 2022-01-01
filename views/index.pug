@@ -1,0 +1,56 @@
+doctype html 
+html
+    head 
+        title Dragon Marial Academy 
+        style  
+            include ../static/style.css
+
+    body 
+        nav#navbar
+            ul 
+                div#logo
+                    img(src='static/images/heck_1.png')
+                    | DMA
+                li #[a(href='/') Home ]
+                li #[a(href='/') Contact ]
+                li #[a(href='/') About ]
+                li #[a(href='/') Gym Class ]
+                li #[a(href='/') Services ]
+        section#introSection
+            div Welcome to Our Academy 
+            div.small Enjoy the Torture :) 
+        section#missionSection
+            h2 Our Mission 
+            div.card
+                h3 Skyraising Kick 
+                div.card-box
+                    div.card-img
+                        img(src='static/images/flyingkick.png')
+                    div.card-content
+                        p A Kick which can send your oppenents to sky
+            div.card
+                h3 Dragon Puching Style
+                div.card-box
+                    div.card-img
+                        img(src='static/images/punch2.png')
+                    div.card-content
+                        p A Punch that will send your oppenents to thier dream world 
+            div.card
+                h3 Friendly Spars
+                div.card-box
+                    div.card-img
+                        img(src='static/images/sparring2.png')
+                    div.card-content
+                        p Co-ordinating while sparring with each other
+        section#sponsorSection
+            h2 Our Sponsors 
+            div#sponsors
+               img(src="static/images/sponsor.png", alt="Sponsor", class='spImg')
+               img(src="static/images/sponsor2.png", alt="Sponsor", class='spImg')
+               img(src="static/images/sponsor3.jfif", alt="Sponsor", class='spImg')
+               img(src="static/images/1.png", alt="Sponsor", class='spImg')
+        footer#footerSection
+            | Copyright &copy; 2021 Dragon Martial Academy 
+         
+        script 
+            include ../static/index.js

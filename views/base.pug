@@ -1,0 +1,22 @@
+//- layout.pug
+doctype html 
+html
+  head
+    title Dragon Martial Academy
+    block scripts
+    block style
+  body
+    nav#navbar
+            ul 
+                div#logo
+                    img(src='static/images/heck_1.png')
+                    | DMA
+                li #[a(href='/') Home ]
+                li #[a(href='/contact') Contact ]
+                li #[a(href='/') About ]
+                li #[a(href='/') Gym Class ]
+                li #[a(href='/') Services ]
+    block content
+    footer#footerSection
+        | Copyright &copy; 2021 Dragon Martial Academy 
+    

@@ -1,0 +1,43 @@
+extends base.pug
+
+block scripts 
+    script(src="static/index.js") 
+
+block style 
+    style 
+        include ../static/style.css
+
+block content 
+    section#introSection
+        div Welcome to Our Academy 
+        div.small Enjoy the Torture :) 
+    section#missionSection
+        h2 Our Mission 
+        div.card
+            h3 Skyraising Kick 
+            div.card-box
+                div.card-img
+                    img(src='static/images/flyingkick.png')
+                div.card-content
+                    p A Kick which can send your oppenents to sky
+        div.card
+            h3 Dragon Puching Style
+            div.card-box
+                div.card-img
+                    img(src='static/images/punch2.png')
+                div.card-content
+                    p A Punch that will send your oppenents to thier dream world 
+        div.card
+            h3 Friendly Spars
+            div.card-box
+                div.card-img
+                    img(src='static/images/sparring2.png')
+                div.card-content
+                    p Co-ordinating while sparring with each other
+    section#sponsorSection
+            h2 Our Sponsors 
+            div#sponsors
+               img(src="static/images/sponsor.png", alt="Sponsor", class='spImg')
+               img(src="static/images/sponsor2.png", alt="Sponsor", class='spImg')
+               img(src="static/images/sponsor3.jfif", alt="Sponsor", class='spImg')
+               img(src="static/images/1.png", alt="Sponsor", class='spImg')

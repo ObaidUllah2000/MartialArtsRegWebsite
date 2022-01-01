@@ -1,0 +1,23 @@
+extends base.pug
+
+block scripts 
+    script(src="static/index.js") 
+
+block style 
+    style 
+        include ../static/style.css
+        include ../static/styleContact.css
+
+block content 
+    div.container
+        h1 This is contact page 
+        form(action="/contact", method='POST', class="myForm") 
+            //- label(for="name") 
+            input(type="text", class="myInput", name="name", id="name", placeholder="Enter Your Name")
+            input(type="text", class="myInput", name="gender", id="gender", placeholder="M/F", pattern="[M,F]{1}")
+            input(type="tel", class="myInput", name="phone", id="phone", placeholder="+91-XXXXX-XXXXX" pattern="+91-[0-9]{5}-[0-9]{5}")
+            input(type="email", class="myInput", name="email", id="email", placeholder="Enter Your Email")
+            input(type="text", class="myInput", name="address", id="address", placeholder="Enter Your Address")
+            textarea.myTextArea(name="desc", cols="30", rows="4", placeholder="Enter Your Concern") 
+            button.btn 
+                |Submit
